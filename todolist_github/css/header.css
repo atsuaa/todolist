@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+/* ヘッダー */
+header{
+  width: 100%;
+  height: auto;
+  margin: 0;
+  border: 0;
+  padding: 10px;
+  background-color: #B1F9D0;
+  display: flex;
+  justify-content: space-between;
+}
+.header-logo{
+  height: auto;
+  margin: 0;
+  background: url(../images/favicon_memo.jpg) no-repeat;
+  background-size: contain;
+  background-color: transparent;
+  flex: 0 1 100px;
+}
+/* .header-logo img{
+  width: 100%;
+} */
+.header-title{
+  flex: 0 1 250px;
+  text-align: center;
+}
+.header-title h1{
+  width: 100%;
+  margin: 0;
+}
+.header-login{
+  flex: 0 1 100px;
+}
+
+
+@media (max-width:767px) {
+  header{
+    padding: 2px;
+    display: inline-block;
+  }
+  .header-logo{display: none;}
+  .header-title{
+    float: left;
+  }
+  .header-title h1{
+    font-size: 1em;
+  }
+  .header-login{
+    float: right;
+  }
+}

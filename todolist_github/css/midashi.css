@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+.main h1 {
+  color: #007AB7;/*文字色*/
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid 3px #007AB7;/*線色*/
+  padding: 0.5em;/*文字周りの余白*/
+  border-radius: 0.5em;/*角丸*/
+  text-align: center;
+}
+
+h2 {
+  padding: .5em .75em;
+  background-color: #f6f6f6;
+  border-bottom: 1px solid #ccc;
+}
+
+h3{
+  width: 60%;
+  height: 30px;
+  line-height: 16px;
+  border: 1px solid #007AB7;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 12px;
+  margin: 0 auto;
+  padding: 10px;
+  color: #007AB7;
+  background-color: #9ACDE7;
+  transition: width 0.5s ease 0s, height 0.5s ease-in 0.5s, line-height 0.2s linear 1s;
+  overflow: hidden;
+}
+h3:hover {
+  width: 85%;
+  height: 70px;
+  line-height: 20px;
+  vertical-align: middle;
+}
+
+h4 {
+  margin: 0 auto;
+  background: #c2edff;/*背景色*/
+  padding: 0.2em;/*文字まわり（上下左右）の余白*/
+  border-radius: 5px;
+  text-align: center;
+}
+
+.list-box h4 {
+  margin: 0 20px;
+  border-radius: 20px;
+}
+
+
+@media (max-width: 767px) {
+  .main h1 {
+    color: #007AB7;/*文字色*/
+    margin: 0 auto;
+    border: none;
+    border-bottom: solid 3px #007AB7;
+    padding: 0 0.5em;
+    border-radius: 0.2em;/*角丸*/
+    text-align: center;
+    font-size: 2em;
+  }
+}

@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+/* フォーム */
+.cp_iptxt {
+	width: 100%;
+	margin: 10px 0;
+  display: inline-block;
+}
+.cp_iptxt p{
+  margin: 0;
+  text-align: center;
+}
+.cp_iptxt input[type='text'] {
+	font: 15px/24px sans-serif;
+	width: 100%;
+  border: 1px solid #ffffff;
+	box-shadow: 1px 1px 2px 0 #707070 inset;
+	border-radius: 4px;
+	padding: 0.3em;
+	letter-spacing: 1px;
+	color: #aaaaaa;
+  transition: 0.3s;
+}
+.ef input[type='text']:focus {
+	outline: none;
+	box-shadow: inset 1px 1px 2px 0 #c9c9c9;
+}
+
+.textlines {
+  width: 100%;             /* 横幅いっぱいにする */
+  height: 100%;           /* 高さ */
+    border: 2px solid #007AB7;  /* 枠線 */
+    border-radius: 0.67em;   /* 角丸 */
+    padding: 0.5em;          /* 内側の余白量 */
+    background-color: snow;  /* 背景色 */
+
+    font-size: 1em;          /* 文字サイズ */
+    line-height: 1.2;        /* 行の高さ */
+}
+.textlines:focus {
+    border-color: skyblue;   /* 枠線の色 */
+    background-color: #FFE;  /* 背景色 */
+    outline: none;           /* ※ブラウザが標準で付加する線を消したいとき */
+}
+
+.date-form {
+  display: block;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+}
+.date-form input[type="date"], input[type="time"] {
+  padding: 0 10px;
+  width: 100%;
+  border: 0;
+  background: transparent;
+  font-size: 14px;
+  color: #999;
+}
+
+/* 送信ボタン */
+.under-right form {
+	text-align: center;
+}
+.submit{
+  text-align: center;
+}
+input[type='submit']{
+  margin: 0 auto;
+  border: none;
+  padding: 0 10px;
+  border-radius: 5px;
+  background-color: #333;
+  opacity: 0.5;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+input[type='submit']:hover{
+  border: none;
+  padding: 0 20px;
+  border-radius: 5px;
+  background-color: #333;
+  opacity: 1;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ソート機能 */
+.sort-box{
+  margin: auto 30px;
+}
+.sort-row{
+  display: flex;
+}
+.sort-select{
+  margin: auto 10px;
+  flex: auto;
+  display: flex;
+}
+.sort-select h4{
+	margin: 0;
+	height: 100%;
+	font-size: 18px;
+}
+.sort-nav{
+  flex: 1 0 auto;
+}
+.sort-order{
+  flex: auto;
+}
+.sort-select .sort-order, .sort-date {
+  margin: auto 10px;
+  height: 36px;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  flex: auto;
+}
+.sort-date input[type="date"], select {
+  padding: 0 10px;
+  height: 36px;
+  border: 0;
+  background: transparent;
+  font-size: 14px;
+  color: #999;
+}
+.sort-button{
+	width: 140px;
+	margin: auto;
+	text-align: center;
+  flex: 0 1 auto;
+}

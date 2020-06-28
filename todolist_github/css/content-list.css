@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+.list-content-range{
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+}
+.list-box{
+  width: 29%;
+  height: auto;
+  padding: 0.5em 1em;
+  margin: 1em;
+  color: #5d627b;
+  background: white;
+  border-top: solid 5px #5d627b;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+  float: left;
+  /* transition: 1s; */
+}
+.list-box:hover{
+  transform: scale(1.05);
+}
+
+.list-box ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.list-title{
+
+}
+.list-content{
+    height: 132px;
+    padding: 0.5em 1em;
+    margin: 4px 0;
+    background: -webkit-repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+    background: repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+    overflow: hidden;
+}
+/* 選択したときjsで追加 */
+.list-action{
+  height: auto;
+  overflow: none;
+}
+
+.list-below{
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  text-align: center;
+}
+.below-left{
+  flex: 1 1 auto;
+}
+.below-center{
+  flex: 1 1 auto;
+}
+.below-right{
+  flex: 1 1 auto;
+}
+.list-under{
+  display: flex;
+  justify-content: space-around;
+}
+.under-left{
+  flex: 0 0 auto;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: center;
+}
+.under-left h3 {
+  border: none;
+  color: #FFF;
+  background-color: #717171;
+}
+.under-right{
+  width: 100px;
+  padding: auto;
+  flex: 0 0 auto;
+}
+
+.page-after{
+  clear: both;
+}
+
+/* 他の周りを暗くするdiv class="dark" */
+.dark {
+  width: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  position: absolute;
+  left: 0;
+  z-index: 5;
+}
+
+/* タイトルでタグ付する関係のcss */
+.list-title a{
+  color: #31aae2;
+  text-decoration: none;
+  transition: 0.2;
+}
+.list-title a:hover{
+  background-color: #A4C6FF;
+}
